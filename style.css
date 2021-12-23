@@ -1,0 +1,173 @@
+body {
+    /* background-color: rgba(41, 35, 35, 0.562); */
+  }
+  .container {
+    display: flex;
+    background: radial-gradient(#ffcccc, #e9e9e9);
+    flex-direction: column;
+    height: 20rem;
+    width: 40rem;
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-items: start;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+  /* .btn{
+      display: flex;
+      color: rebeccapurple;
+  
+      justify-content: space-evenly;
+  
+  } */
+  #postText {
+    border: none;
+    background: transparent;
+  }
+  textarea {
+    position: absolute;
+    top: 1rem;
+    border: none;
+    overflow: auto;
+    font-size: 23px;
+    outline: none;
+    box-shadow: none;
+    resize: none;
+  }
+  ::placeholder {
+    color: rebeccapurple;
+  }
+  .gifsPost {
+    position: absolute;
+    opacity: 0;
+      height: 10rem;
+      top: 6rem;
+      width: 10rem;
+  }
+  #inputGif {
+    position: relative;
+    /* visibility: hidden; */
+    display: inline;
+    left: 29rem;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .gifBtn {
+    display: inline;
+    position: relative;
+    left: 18rem;
+    top: 2.5rem;
+    padding: 10px 27px;
+    margin: 1rem;
+    border-radius: 1rem;
+  }
+  .postBtn {
+    display: block;
+    color: white;
+    position: relative;
+    top: 2rem;
+    width: 41rem;
+    font-size: 1rem;
+    padding: 10px 27px;
+    margin: 1rem;
+    background: #4b71ff;
+  }
+  .column {
+    float: left;
+    /* width: 25%; */
+    padding: 0 10px;
+    margin: 2rem;
+  }
+  .gifs{
+    cursor: pointer;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    margin: 0 -5px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  .spinner {
+    position: absolute;
+    left: 44%;
+    top: 28rem;
+  }
+  .loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    /* transform-origin: 100% 100% */
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  #no-data-msg {
+    display: inline;
+    position: relative;
+    top: 1.5rem;
+    left: 27%;
+    display: inline;
+    position: relative;
+    font-size: 3rem;
+    opacity: 0;
+  }
+  .card2{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 10px;
+    height: auto;
+  }
+  
+  .card2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container2 {
+    padding: 2px 16px;
+  }
+  .imgToPost{
+    height: 209px;
+    width: 100%;
+  }
+  .post{
+    display: flex;
+    flex-direction: row;
+    /* justify-items:; */
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+  }

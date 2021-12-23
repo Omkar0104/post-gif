@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gifs{
+            height: 10rem;
+        }
+    </style>
+    <title>Post A GIF!</title>
+</head>
+<body>
+    <div class="container">
+    <textarea name="post" id="postText" value="" cols="30" rows="0"  placeholder="Write Something...">
+</textarea>
+<div class="column">
+    <img class="gifsPost">
+  </div>
+    <div class="btn">
+        <div id="inputGif">
+        <input type="text" id="searchGif" onchange="inputChanged()" placeholder="Search.." name="search">
+      <button type="submit" id="searchGifBtn"><i class="fa fa-search"></i></button>
+    </div>
+    <button class="gifBtn">&#128269  GIF</button>
+    <button class="postBtn">Post</button>
+</div>
+</div>
+<div class="spinner"></div>
+<div class="row">
+</div>
+ <div id="no-data-msg">Oops! No GIF for this keyword</div>
+
+ <div class="post">
+ <!-- <div class="card2">
+     <div class="container2">
+         <p>Hello, there!</p> 
+        </div>
+        <img src="https://media4.giphy.com/media/hStvd5LiWCFzYNyxR4/giphy.gif?cid=6911083ajedfj2tv6iupjuc3g4nl9mpokhks87ifwv4zx3ir&rid=giphy.gif&ct=g">
+  </div>
+
+  -->
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
