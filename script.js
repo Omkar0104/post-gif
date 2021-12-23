@@ -82,7 +82,7 @@ searchGifBtn.addEventListener('click',()=>{
  </div>`
     document.querySelector('.post').innerHTML=posted;
     postText='hi';
-    document.getElementById('postText').innerHTML='';
     imgToPost.style.opacity=0;
     postNo++;
+    document.getElementById('postText').value=null;
   })
